@@ -1,0 +1,26 @@
+{
+  "manifest_version": 2,
+  "name": "Styled Components Indicator",
+  "version": "1.0.0",
+  "description": "Check whether or not the website is using styled-components",
+  "author": "Jonas K",
+  "icons": {
+    "16": "icons/icon16.png",
+    "48": "icons/icon48.png",
+    "128": "icons/icon128.png"
+  },
+  "permissions": ["activeTab"],
+  "background": {
+    "scripts": ["scripts/background.js"]
+  },
+  "page_action": {
+    "default_icon": "icons/icon128-inactive.png"
+  },
+  "content_scripts": [
+    {
+      "matches": ["<all_urls>"],
+      "js": ["scripts/popup.js"],
+      "run_at": "document_end"
+    }
+  ]
+}
