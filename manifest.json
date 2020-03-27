@@ -4,6 +4,7 @@
   "version": "1.0.0",
   "description": "Check whether or not the website is using styled-components",
   "author": "Jonas K",
+  "homepage_url": "https://github.com/jonaskkristensen/styled-components-indicator",
   "icons": {
     "16": "icons/icon16.png",
     "48": "icons/icon48.png",
