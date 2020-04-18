@@ -1,6 +1,6 @@
 const { runtime, pageAction } = chrome;
 runtime.onMessage.addListener(function(req, sender) {
-  let { id } = sender.tab;
+  const { id } = sender.tab;
   if (req.isUsed) {
     pageAction.show(id);
     pageAction.setIcon({ tabId: id, path: "icons/icon128.png" });
