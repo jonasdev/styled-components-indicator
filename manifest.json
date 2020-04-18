@@ -10,7 +10,7 @@
     "48": "icons/icon48.png",
     "128": "icons/icon128.png"
   },
-  "permissions": ["activeTab"],
+  "permissions": ["file:///*", "http://*/*", "https://*/*"],
   "background": {
     "scripts": ["scripts/background.js"]
   },
