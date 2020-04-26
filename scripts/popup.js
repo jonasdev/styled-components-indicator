@@ -9,7 +9,7 @@ let isUsed = false;
   if (
     typeof styled === "string" ||
     typeof styledComponents === "string" ||
-    keys?.match("styled")
+    keys?.toLowerCase().match("styled")
   ) {
     isUsed = true;
   }
